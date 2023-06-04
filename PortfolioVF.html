@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Fdez</title>
+    <link rel="shortcut icon" href="imagenes/Logo Portfolio Negro 2.png" type="image/x-icon">
+    <link rel="stylesheet" href="PortfolioVF.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="PortfolioVF.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="menu">
+            <div class="menu__logo">
+                <img class="menu__imagen" src="imagenes/Logo Portfolio.png" alt="">
+            </div>
+            <nav class="menu__navegacion">
+                <a class="menu__apartados" href="#">Inicio</a>
+                <a class="menu__apartados" href="#sobreMi">Sobre Mi</a>
+                <a class="menu__apartados" href="#proyectos">Proyectos</a>
+                <a class="menu__apartados" href="#curriculum">CV</a>
+                <a class="menu__apartados" href="#contacto">Contacto</a>
+            </nav>
+        </div>
+
+        <div class="subheader">
+            <h1 class="header__titulo">Hola, me llamo<span class="header__nombre"> Víctor Fernández</span></h1>
+
+            <div class="subheader__subtitulo">
+                <h2 class="header__subtitulo">Soy desarrollador de software</h2>
+            </div>
+
+            <button class="subheader__boton" id="botonDescargarCV">
+                <img class="bajar__img"
+                    src="https://static.vecteezy.com/system/resources/previews/014/455/895/non_2x/down-arrow-icon-on-transparent-background-free-png.png"
+                    alt="">
+            </button>
+        </div>
+    </header>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section class="body__aboutMe" id="sobreMi">
+
+        <div class="aboutMe__contenedor">
+            <div class="texto__titulo--movil">
+                <h2 class="aboutMe__titulo">About Me</h2>
+            </div>
+
+            <div class="aboutMe__fotoPerfil">
+                <img class="fotoPerfil__img" src="imagenes/Foto CV 3.jpg" alt="Foto de Perfil">
+                
+            </div>
+
+            <div class="aboutMe__texto">
+
+                <div class="texto__titulo">
+                    <h2 class="aboutMe__titulo">About Me</h2>
+                </div>
+
+                <div class="texto__descripcion">
+                    <p>Me llamo Víctor Fernández Martín y soy de 2004. 
+                    Desde pequeño me ha interesado el mundo tecnológico, sobre todo la parte de
+                    programacion y la robótica como tal. Me considero una persona muy resolutiva, trabajo muy
+                    bien tanto en equipo como de forma individual. También me considero muy
+                    perfeccionista, responsable y creativo.
+                    </p>
+                </div>
+
+                <div class="texto__etiquetas">
+                    <p class="aboutMe__etiquetas active-link" onclick="opentab('habilidades')">Habilidades</p>
+                    <p class="aboutMe__etiquetas" onclick="opentab('experiencia')">Experiencia</p>
+                    <p class="aboutMe__etiquetas" onclick="opentab('estudios')">Estudios</p>
+                </div>
+
+                <div class="etiquetas__info active-tab" id="habilidades">
+                    <div class="etiquetas__habilidades">
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/java logo.png" alt=""></div>
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/Kotlin logo.png" alt=""></div>
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/HTML5 logo.png" alt=""></div>
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/Css logo.png" alt=""></div>
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/Python logo.png" alt=""></div>
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/MySQL logo.png"></div>       
+                    </div>
+                </div>
+
+                <div class="etiquetas__info" id="experiencia">
+                    <ul>
+                        <li><span>Santander</span><br>Tecnico en Ciberseguridad</li>
+                        <li><span>Telefonica</span><br>Teleoperador</li>
+                    </ul>
+                </div>
+
+                <div class="etiquetas__info" id="estudios">
+                    <ul>
+                        <li><span>2020 - 2022</span><br>Bachillerato Tecnológico</li>
+                        <li><span>Cesur</span><br>Desarrollo de Aplicaciones Multiplataforma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--SECCION CURRICULUM-->
+    <section class="body__curriculum" id="curriculum">
+        <button class="curriculum__boton">Descargar CV <img class="cv__img" src="imagenes/descarga simbolo.png" alt=""> </button>
+    </section>
+
+
+    <!-- SECCION PROYECTOS -->
+    <section class="body__proyectos" id="proyectos">
+        <div class="proyectos__texto">
+            <h2 class="proyectos__titulo">Proyectos</h2>
+        </div>
+        
+        <div class="proyectos__todos">
+            <div class="proyectos__proyecto">
+                <img class="proyecto__img" src="imagenes/componente10.png" alt="">
+                <h3 class="proyecto__texto">Proyecto 1</h3>
+            </div>
+
+            <div class="proyectos__proyecto">
+                <img class="proyecto__img" src="imagenes/componente9.png" alt="">
+                <h3 class="proyecto__texto">Proyecto 2</h3>
+            </div> 
+
+            <div class="proyectos__proyecto">
+                <img class="proyecto__img" src="imagenes/desktop-design (1).jpg" alt="">
+                <h3 class="proyecto__texto">Proyecto 3</h3>
+            </div> 
+        </div>
+        
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section class="body__contacto" id="contacto">
+        <div class="contacto__texto">
+            <h2 class="contacto__titulo">Contacto</h2>
+        </div>
+
+        <div class="contacto__todo">
+            <div class="contacto__redes">
+                
+                <div class="redes__link">
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><img class="redes__img" src="https://telecos.upc.edu/es/shared/images/social/logos-rodons/linkedin-circle.png" alt=""></a>
+                </div>
+                <div class="redes__link">
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><img class="redes__img" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+                </div>
+                <div class="redes__link">
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><img class="redes__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt=""></a>
+                </div>
+                <div class="redes__link">
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><img class="redes__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt=""></a>
+                </div>
+
+            </div>
+
+            <form class="formulario">
+                <h3 class="formulario__titulo">-- Formulario de contacto --</h3>
+                <div class="formulario__nombreCompleto">
+                    <input class="formulario__nombre" type="text" name="" id="formulario--nombre" placeHolder="Nombre">
+                    <input class="formulario__apellidos" type="text" name=""  id="formulario--apellidos" placeHolder="Apellidos">
+                </div>
+
+                <input class="formulario__email" type="email" name=""  id="formulario--email" placeHolder="Email">
+                <textarea class="formulario__mensaje" id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Mensaje"></textarea>
+                <input class="formulario__boton" type="submit" value="Enviar">
+            </form>
+        </div>
+
+    </section>
+
+</body>
+
+<!--FOOTER-->
+<footer>
+    <img class="footer__logo" src="imagenes/Logo Portfolio.png" alt="">
+    <p class="footer__nombre">Víctor Fernández</p>
+    &copy; Victor Fdez 2023
+</footer>
+
+</html>
