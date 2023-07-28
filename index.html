@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Fdez</title>
+    <link rel="shortcut icon" href="imagenes/Logo Portfolio Negro 2.png" type="image/x-icon">
+    <link rel="stylesheet" href="PortfolioVF.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="PortfolioVF.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="menu">
+            <div class="menu__logo">
+                <a class="menu__apartados" href="#"><img class="menu__imagen" src="imagenes/Logo Portfolio.png" alt=""></a>
+            </div>
+            <nav class="menu__navegacion">
+                <a class="menu__apartados" href="#">Inicio</a>
+                <a class="menu__apartados" href="#sobreMi">Sobre Mi</a>
+                <a class="menu__apartados" href="#proyectos">Proyectos</a>
+                <a class="menu__apartados" href="#curriculum">CV</a>
+                <a class="menu__apartados" href="#contacto">Contacto</a>
+            </nav>
+        </div>
+
+        <div class="subheader">
+            <h1 class="header__titulo">Hola, me llamo<span class="header__nombre"> Víctor Fernández</span></h1>
+
+            <div class="subheader__subtitulo">
+                <h2 class="header__subtitulo">Soy desarrollador de software</h2>
+            </div>
+
+            <a class="subheader__boton" id="botonDescargarCV" href="#sobreMi">
+                <img class="bajar__img" src="imagenes/bajar.png" alt="">
+            </a>
+        </div>
+    </header>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section class="body__aboutMe" id="sobreMi">
+
+        <div class="aboutMe__contenedor">
+            <div class="texto__titulo--movil">
+                <h2 class="aboutMe__titulo">About Me</h2>
+            </div>
+
+            <div class="aboutMe__fotoPerfil">
+                <img class="fotoPerfil__img" src="imagenes/Foto CV 3.jpg" alt="Foto de Perfil">
+            </div>
+
+            <div class="aboutMe__texto">
+
+                <div class="texto__titulo">
+                    <h2 class="aboutMe__titulo">About Me</h2>
+                </div>
+
+                <div class="texto__descripcion">
+                    <p>Me llamo Víctor Fernández Martín y soy de 2004. 
+                    Desde pequeño me ha interesado el mundo tecnológico, sobre todo la parte de
+                    programacion y la robótica como tal. Me considero una persona muy resolutiva, trabajo muy
+                    bien tanto en equipo como de forma individual. También me considero muy
+                    perfeccionista, responsable y creativo.
+                    </p>
+                </div>
+
+                <div class="texto__etiquetas">
+                    <p class="aboutMe__etiquetas active-link" onclick="opentab('habilidades')">Habilidades</p>
+                    <p class="aboutMe__etiquetas" onclick="opentab('experiencia')">Experiencia</p>
+                    <p class="aboutMe__etiquetas" onclick="opentab('estudios')">Estudios</p>
+                </div>
+
+                <div class="etiquetas__info active-tab" id="habilidades">
+                    <div class="etiquetas__habilidades">
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/java logo.png" alt=""></div>
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/Kotlin logo.png" alt=""></div>
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/HTML5 logo.png" alt=""></div>
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/Css logo.png" alt=""></div>
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/Python logo.png" alt=""></div>
+                        <div class="habilidades__logo"><img class="habilidades__img" src="imagenes/MySQL logo.png"></div>       
+                    </div>
+                </div>
+
+                <div class="etiquetas__info" id="experiencia">
+                    <ul>
+                        
+                    </ul>
+                </div>
+
+                <div class="etiquetas__info" id="estudios">
+                    <ul>
+                        <li><span>Colegio Ábaco</span><br>Bachillerato Tecnológico (2020 - 2022)</li>
+                        <li><span>Cesur</span><br>Desarrollo de Aplicaciones Multiplataforma (2022 - 2024)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--SECCION CURRICULUM-->
+    <section class="body__curriculum" id="curriculum">
+        <a download="CV - Víctor Fernández" href="Curriculum - Víctor Fernández Martín.pdf" class="curriculum__boton">Descargar CV <img class="cv__img" src="imagenes/descarga simbolo.png" alt=""> </a>
+    </section>
+
+
+    <!-- SECCION PROYECTOS -->
+    <section class="body__proyectos" id="proyectos">
+        <div class="proyectos__texto">
+            <h2 class="proyectos__titulo">Proyectos</h2>
+        </div>
+        
+        <div class="proyectos__principales">
+            <div class="proyectos__proyecto">
+                <img class="proyecto__img" src="imagenes/proyectoURL.png" alt="">
+                <h3 class="proyecto__texto"><a href="https://github.com/VictorFernandezMartin/HerramientasDeRedParaURL" target="_blank" >HerramientasDeRedParaUrl</a></h3>
+                <p class="proyecto__descripcion">Hace el ping, tracert, curl, telnet y nslookup de cualquier URL.</p>
+            </div>
+
+            <div class="proyectos__proyecto">
+                <img class="proyecto__img" src="imagenes/proyectoWifiSpeed.jpg" alt="">
+                <h3 class="proyecto__texto"><a href="https://github.com/VictorFernandezMartin/WifiSpeed" target="_blank" >WifiSpeed</a></h3>
+                <p class="proyecto__descripcion">Te muestra datos sobre tu conexion a internet.</p>
+            </div> 
+
+            <div class="proyectos__proyecto">
+                <img class="proyecto__img" src="imagenes/proyectoCalculadora.png" alt="">
+                <h3 class="proyecto__texto"><a href="https://github.com/VictorFernandezMartin/Calculadora" target="_blank" >Calculadora</a></h3>
+                <p class="proyecto__descripcion">Es una calculadora normal y corriente para hacer cuentas simples.</p>
+            </div> 
+        </div>
+
+        <div class="proyecto__todos">
+            <p class="proyectos__enlace"><a href="https://github.com/VictorFernandezMartin?tab=repositories" target="_blank" >Más Proyectos</a></p>
+        </div>
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section class="body__contacto" id="contacto">
+        <div class="contacto__texto">
+            <h2 class="contacto__titulo">Contacto</h2>
+        </div>
+
+        <div class="contacto__todo">
+            <div class="contacto__redes">
+                
+                <div class="redes__link">
+                    <a href="https://www.linkedin.com/in/victorfdezmartin/" target="_blank" ><img class="redes__img" src="https://telecos.upc.edu/es/shared/images/social/logos-rodons/linkedin-circle.png" alt=""></a>
+                </div>
+                <div class="redes__link">
+                    <a href="https://github.com/VictorFernandezMartin" target="_blank" ><img class="redes__img" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
+                </div>
+                <div class="redes__link">
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" ><img class="redes__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt=""></a>
+                </div>
+                <div class="redes__link">
+                    <a href="https://www.instagram.com/victorfdez._/?hl=es" target="_blank" ><img class="redes__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt=""></a>
+                </div>
+
+            </div>
+
+            <form class="formulario" action="https://formsubmit.co/d83c3d95f9edca4fd7e7f7ab6e61c0db" method="POST">   
+                <h3 class="formulario__titulo">-- Formulario de contacto --</h3>
+                <div class="formulario__nombreCompleto">
+                    <input class="formulario__nombre" type="text" name="nombre" id="formulario--nombre" placeHolder="Nombre">
+                    <input class="formulario__apellidos" type="text" name="apellidos"  id="formulario--apellidos" placeHolder="Apellidos">
+                </div>
+
+                <input class="formulario__email" type="email" name="email"  id="formulario--email" placeHolder="Email">
+                <textarea class="formulario__mensaje" id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Mensaje"></textarea>
+                <input class="formulario__boton" type="submit" value="Enviar">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+            </form>
+        </div>
+
+    </section>
+
+</body>
+
+<!--FOOTER-->
+<footer>
+    <img class="footer__logo" src="imagenes/Logo Portfolio.png" alt="">
+    <p class="footer__nombre">Víctor Fernández</p>
+    &copy; Victor Fdez 2023
+</footer>
+
+</html>
